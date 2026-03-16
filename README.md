@@ -1,3 +1,5 @@
+This is a fork of the AutoMapper repositiory, which contains a fix for [GHSA-rvv3-g6hj-g44x](https://github.com/LuckyPennySoftware/AutoMapper/security/advisories/GHSA-rvv3-g6hj-g44x)
+
 ![AutoMapper](https://s3.amazonaws.com/automapper/logo.png)
 
 [![CI](https://github.com/automapper/automapper/workflows/CI/badge.svg)](https://github.com/AutoMapper/AutoMapper/actions?query=workflow%3ACI)
