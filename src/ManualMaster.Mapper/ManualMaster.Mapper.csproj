@@ -5,13 +5,12 @@
     <Description>A convention-based object-object mapper.</Description>
     <TargetFramework>net8.0</TargetFramework>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <AssemblyName>AutoMapper</AssemblyName>
-    <AssemblyOriginatorKeyFile>..\..\AutoMapper.snk</AssemblyOriginatorKeyFile>
+    <AssemblyName>ManualMaster.Mapper</AssemblyName>
+    <AssemblyOriginatorKeyFile>..\..\PublicPrivateKeyFile.snk</AssemblyOriginatorKeyFile>
     <SignAssembly>true</SignAssembly>
     <PublicSign Condition=" '$(OS)' != 'Windows_NT' ">true</PublicSign>
-    <PackageId>AutoMapper</PackageId>
+    <PackageId>ManualMaster.Mapper</PackageId>
     <PackageIcon>icon.png</PackageIcon>
-    <PackageProjectUrl>https://automapper.org</PackageProjectUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
 
     <MinVerDefaultPreReleaseIdentifiers>preview.0</MinVerDefaultPreReleaseIdentifiers>
@@ -24,13 +23,7 @@
     <Deterministic>true</Deterministic>
     <ContinuousIntegrationBuild Condition="'$(GITHUB_ACTIONS)' == 'true'">true</ContinuousIntegrationBuild>
 
-    <BaselineAllAPICompatError>true</BaselineAllAPICompatError>
-    <AdditionalApiCompatOptions>--exclude-non-browsable --exclude-compiler-generated</AdditionalApiCompatOptions>
   </PropertyGroup>
-
-  <ItemGroup>
-    <ResolvedMatchingContract Include="..\LastMajorVersionBinary\AutoMapper.dll" />
-  </ItemGroup>
 
   <ItemGroup>
     <None Include="..\..\icon.png" Pack="true" PackagePath="" Visible="False" />
@@ -41,13 +34,7 @@
     <PackageReference Include="Microsoft.Extensions.Options" Version="8.0.0" />
     <PackageReference Include="MinVer" Version="6.0.0" PrivateAssets="All" />
     <PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="All" />
-    <PackageReference Include="Microsoft.DotNet.ApiCompat" Version="7.0.0-beta.22074.1" PrivateAssets="All" />  
   </ItemGroup>
-
-  <Target Name="PreBuild" AfterTargets="GetAssemblyVersion">
-    <Exec Condition=" '$(OS)' == 'Windows_NT' " Command="powershell -ExecutionPolicy Unrestricted -File &quot;$(ProjectDir)ApiCompat\PreBuild.ps1&quot; -version $(Version)" />
-    <Exec Condition=" '$(OS)' != 'Windows_NT' " Command="&quot;$(ProjectDir)ApiCompat/PreBuild.sh&quot; $(Version)" />
-  </Target>
   <ItemGroup>
     <Using Include="System.Linq.Expressions.Expression" Static="true" />
     <Using Include="AutoMapper.Execution.ExpressionBuilder" Static="true" />

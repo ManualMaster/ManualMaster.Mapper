@@ -20,13 +20,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Benchmark", "src\Benchmark\Benchmark.csproj", "{B8051389-CB47-46FB-B234-9D49506704AA}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoMapper", "src\AutoMapper\AutoMapper.csproj", "{35888286-1428-4BF3-BB0C-D8BC092D0A5D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ManualMaster.Mapper", "src\ManualMaster.Mapper\ManualMaster.Mapper.csproj", "{35888286-1428-4BF3-BB0C-D8BC092D0A5D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoMapper.UnitTests", "src\UnitTests\AutoMapper.UnitTests.csproj", "{4F96C184-FF4B-4256-B8BC-C51D1167C489}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ManualMaster.Mapper.UnitTests", "src\UnitTests\ManualMaster.Mapper.UnitTests.csproj", "{4F96C184-FF4B-4256-B8BC-C51D1167C489}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoMapper.IntegrationTests", "src\IntegrationTests\AutoMapper.IntegrationTests.csproj", "{24B47F4C-0035-4F29-AAD9-4C47E1AAD98E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ManualMaster.Mapper.IntegrationTests", "src\IntegrationTests\ManualMaster.Mapper.IntegrationTests.csproj", "{24B47F4C-0035-4F29-AAD9-4C47E1AAD98E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoMapper.DI.Tests", "src\AutoMapper.DI.Tests\AutoMapper.DI.Tests.csproj", "{BEBD620A-8BAA-463F-BE0F-8319AD3C1644}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ManualMaster.Mapper.DI.Tests", "src\DI.Tests\ManualMaster.Mapper.DI.Tests.csproj", "{BEBD620A-8BAA-463F-BE0F-8319AD3C1644}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestApp", "src\TestApp\TestApp.csproj", "{35CED3AE-B825-4703-992D-A58B5BE646DC}"
 EndProject
